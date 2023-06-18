@@ -202,9 +202,9 @@ a:after{
 .bannerRight img{
     position: relative;
     left: 10%;
-    top: 11%;
-    height: 62.3vh;
-    width: 62.3vh;
+    top: 10%;
+    height: 90%;
+    width: 100%;
     filter: drop-shadow(-3px -2px 3px grey);
 }
 
@@ -862,7 +862,7 @@ h2{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 40vh;
+        width: 50%;
 
     }
     
