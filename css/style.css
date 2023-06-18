@@ -846,7 +846,7 @@ h2{
         justify-content: space-evenly;
         align-items: center;
         flex:auto;
-        padding:0;
+        padding:20px;
         margin: 0;
     }
     
