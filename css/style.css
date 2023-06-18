@@ -660,8 +660,8 @@ h2{
     /* navigation */
     
     .navigation{
-        background-color: var(--whiteColor);
-        color: black;
+        background-color: rgba(0, 0, 0, 0.729);
+        color: white;
         height: var(--navbarHeight);
         display: flex;
         justify-content: center;
@@ -697,7 +697,7 @@ h2{
     
     
     .navigation ul li a{
-        color: black;
+        color: white;
         text-decoration: none;
         font-weight: bold;
         position: relative;
