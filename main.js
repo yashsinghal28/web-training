@@ -1,6 +1,6 @@
 
 var swiper = new Swiper(".skills", {
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 20,
   freeMode: true,
   pagination: {

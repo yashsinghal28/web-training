@@ -289,7 +289,7 @@ h2{
     border-left: 0px;
     box-shadow: 1px 9px 7px 0px rgba(0,0,0,0.3);
     transition: 0.4s;
-    width: 20% !important;
+    width: 18rem !important;
 }
 
 .skills-a span{
@@ -848,6 +848,9 @@ h2{
         align-items: center;
         /* flex:auto; */
         padding:20px;
+        margin: 20px;
+        position: relative;
+        box-sizing: border-box;
     }
     
     h2{
@@ -859,11 +862,11 @@ h2{
         box-shadow: 1px 9px 7px 0px rgba(0,0,0,0.3);
         transition: 0.4s;
         margin-top: 20px;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
+        display: flex;
+        flex-direction: column ;
+        justify-content: center ;
         align-items: center;
-        width: 60% !important;
+        width: 70% !important;
 
     }
     
