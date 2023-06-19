@@ -12,7 +12,7 @@ var swiper = new Swiper(".skills", {
         slidesPerView: 1,
     },
     480:{
-        slidesPerView: 2,
+        slidesPerView: 3,
     },
 }
 });

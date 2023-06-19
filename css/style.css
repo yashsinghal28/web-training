@@ -284,6 +284,7 @@ h2{
 .skills-a{
     padding: 40px;
     border: 0.2px solid #dfd8d8;
+    display: flex;
     margin-left: 10px;
     border-right: 0px;
     border-left: 0px;
@@ -859,13 +860,12 @@ h2{
     
     .skills-a{
         border: 0.2px solid #dfd8d8;
-        box-shadow: 1px 9px 7px 0px rgba(0,0,0,0.3);
+        box-shadow: 1px 9px 7px 0px rgba(0,0,0,0.3) ;
         transition: 0.4s;
         margin-top: 20px;
         display: flex;
         flex-direction: column ;
-        justify-content: center ;
-        align-items: center;
+        /* justify-content: center ; */
         width: 70% !important;
 
     }
