@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        href="cdn.jsdelivr.net_npm_swiper@9.4.1_swiper-bundle.min.css"
     />
 </head>
 <body>
@@ -40,9 +40,9 @@
 
         <div class="nav-links">
         <ul class="menuItmes">
-            <li ><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
+            <li ><a href="#home">Home</a></li>
+            <li><a href="#skills">Services</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Contact</a></li>
            
         </ul>
@@ -62,7 +62,7 @@
 
     <!-- banner -->
 
-    <div class="banner">
+    <div class="banner" id="home">
         <div class="bannerLeft">
             <div class="greeting">
                  Nice To meet you
@@ -109,7 +109,7 @@
 
 
     <!-- skills section -->
-    <div class="skills swiper">
+    <div class="skills swiper" id="skills">
 
         <div class="swiper-wrapper">
         <div class="skills-a swiper-slide">
@@ -168,7 +168,7 @@
 
     <!-- banner2 -->
 
-    <div class="banner2">
+    <div class="banner2" id="about">
 
         <div class="banner2-Image">
             <img src="assests/boy-with-glasses-backpack-stands-front-green-background_777078-8967-removebg-preview.png" height="400px" width="700px" alt="">
@@ -340,7 +340,51 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <section class="container-test">
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="assests/alex-mccarthy-RGKdWJOUFH0-unsplash.jpg" alt="" class="image">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam possimus tempore animi id ex, dolorem repudiandae non voluptate ratione illum sapiente beatae aperiam eveniet dolor deleniti, quasi hic? Nostrum, deleniti.</p>
+
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Marine Lotter</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="assests/albert-dera-ILip77SbmOE-unsplash.jpg" alt="" class="image">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam possimus tempore animi id ex, dolorem repudiandae non voluptate ratione illum sapiente beatae aperiam eveniet dolor deleniti, quasi hic? Nostrum, deleniti.</p>
+
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">James Bond</span>
+                        <span class="job">Web Designer</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="assests/jd-chow-gutlccGLXKI-unsplash.jpg" alt="" class="image">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam possimus tempore animi id ex, dolorem repudiandae non voluptate ratione illum sapiente beatae aperiam eveniet dolor deleniti, quasi hic? Nostrum, deleniti.</p>
+
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Robert jr.</span>
+                        <span class="job">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn1" ></div>
+            <div class="swiper-button-prev nav-btn1"></div>
+            <div class="swiper-pagination" ></div>
+           </div>
+    </section>
+    
+
+    <script src="cdn.jsdelivr.net_npm_swiper@9.4.1_swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
