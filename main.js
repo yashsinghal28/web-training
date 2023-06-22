@@ -3,6 +3,7 @@ var swiper = new Swiper(".skills", {
   slidesPerView: 3,
   spaceBetween: 20,
   freeMode: true,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

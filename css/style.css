@@ -175,10 +175,8 @@ a:after{
 }
 
 .Contact img{
-    height: 3rem;
-    position: relative;
-    left: 230px;
-    top: 3px;
+    height: 2rem;
+   display: none;
     /* top:0px; */
 }
 
@@ -227,9 +225,8 @@ a:after{
 }
 
 .bannerLeft{
-    position: relative;
-    top:70px;
-    left: 80px;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 .bubble2{
@@ -252,12 +249,14 @@ a:after{
 
 
 .bannerRight img{
-    position: relative;
-    left: 10%;
-    top: 10%;
+    /* position: relative; */
+    /* left: 10%;
+    top: 10%; */
     height: 90%;
     width: 100%;
     filter: drop-shadow(-3px -2px 3px grey);
+    margin-top: 11%;
+    margin-left: 15%;
 }
 
 .greeting{
@@ -391,7 +390,7 @@ h2{
 .banner2{
     display: flex;
     height: 500px;
-    width: 100%;
+    /* width: 100%; */
     background: linear-gradient(to right bottom, #bafafa, #bbf5ff, #c2efff, #cce9ff, #d7e3ff, #d2e4ff, #cde5ff, #c8e6ff, #bbedfb, #b9f2ee, #c5f4dd, #dcf3cc);
     margin-top: 70px;
     box-shadow: 0px 3px 3px #c5f4dd,0px -2px 3px #c5f4dd;
@@ -569,6 +568,12 @@ h2{
     font-size: 20px;
     margin-bottom: -5px;
     margin-top: -10px;
+}
+
+#text-z{
+    color: #213555b0;
+    font-size: 15px; 
+    font-family: sans-serif;
 }
 
 
@@ -994,20 +999,20 @@ h2{
     
     .bannerLeft{
         position: absolute;
-        top:70px;
-        left: 30px;
+        top:30px;
+        /* left: 0px; */
         /* margin-top: rem; */
     }
     
     .bubble2{
         height: 20%;
         width: 20%;
-        background:linear-gradient(to right bottom, #bdfbc2, #bdfbc2d0, #bdfbc2ae, #ecffec, #f3fff2);
+        background:linear-gradient(to right bottom, #d7e3ff, #d7e3ff, #d7e3ff, #ecffec, #f3fff2);
         position: relative;
         top: 70%;
         left: 65%;
         z-index: -1;
-        filter: drop-shadow(1px 3px 4px #bdfbc2);
+        filter: drop-shadow(1px 3px 4px #d7e3ff);
         animation:bubble 4s ease-out .4s infinite alternate-reverse;
     }
     
@@ -1281,6 +1286,7 @@ h2{
         filter: drop-shadow(5px 5px 3px yellowgreen);
     }
     
+    
     .follow{
         display: flex;
         justify-content: center;
@@ -1294,7 +1300,7 @@ h2{
         height: 20px;
         width: 20px;
         position: relative;
-        left: 80px;
+        left: 27%;
     }
     
     .facebook{
@@ -1378,25 +1384,41 @@ h2{
         font-size: 20px;
         text-align: center;
     }
+
+    .footer-wrap #news3{
+        font-size: 20px;
+    }
+
+    .link-ft ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .link-ft ul li{
+        padding: 5px;
+    }
+    .link-ft ul li a{
+        letter-spacing: 2px;
+        font-family: sans-serif;
+    }
+
 }
 
 @media  (min-width:480px) and (max-width:768px){
     body{
-        background-color: white;
-        color: var(--primaryColor);
-        font-family: var(--primaryFont);
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
     }
     
     /* navigation */
     
     .navigation{
-        background-color: rgba(0, 0, 0, 0.729);
+        background-color: #fff;
         color: white;
         height: var(--navbarHeight);
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         position: fixed;
         top: 0;
@@ -1405,8 +1427,8 @@ h2{
         width: 100%;
     }
     
-    .logoImage{
-        display: none;
+    .logo{
+        display: flex;
         /* border: 3px solid paleturquoise;   
         animation: title 1s ease-out 0s infinite alternate-reverse;  */
         /* float:left; */
@@ -1421,21 +1443,21 @@ h2{
         display:inline-block;
         /* padding:10px 20px; */
         /* margin-right: 1rem; */
-        position: relative;
-        margin-left:-10px;
-        left: -5px;
+        /* position: relative;
+        left: -5px; */
     }
     
     
     
     .navigation ul li a{
-        color: white;
+        color: rgba(0, 0, 0, 0.796);
         text-decoration: none;
         font-weight: bold;
-        position: relative;
-        padding: 8px;
+        /* position: relative; */
+        padding: 4px;
         bottom: 0px;
         left:0px;
+        text-transform: uppercase;
     }
     
     a:before{
@@ -1482,31 +1504,47 @@ h2{
    }
     
     /* banner section */
-    
+
     .banner{
         display: flex;
-        flex-direction: column;
-        height: 900px;
-        width: 100%;
+        height: 450px;
+        width: 100vw;
         background:linear-gradient(to right bottom, #bdfbc2, #b2fbd2, #abfae0, #aaf8ec,
          #aff5f4, #b1f3ed, #b3f0e6, #b5eee0, #bfe9c8, #d1e1b3, #e7d7a4, #fbcba2);
-         filter: drop-shadow(0px 5px 3px #aaf8ec );
-         margin-top: 3px;
-         position: relative;
+         filter: drop-shadow(0px 3px 3px #aaf8ec );
+        margin-top: 3px;
+        box-sizing: border-box;
         /* filter: drop-shadow(0px 3px 4px grey); */
         
     }
-    
+
     .bannerLeft{
-        position: absolute;
-        top:70px;
-        left: 30px;
-        /* margin-top: rem; */
+       position: static;
+       margin-left: 20px;
+       margin-top: 80px;
+    }
+
+
+    .bannerLeft .greeting{
+        font-size: 3vw;
+        
     }
     
+    .bannerLeft .title{
+        font-size: 5vw;
+        
+    }
+
+    .bannerLeft .description{
+        font-size: 2vw;
+    }
+
+
+
+    
     .bubble2{
-        height: 100px;
-        width: 100px;
+        /* height: 100px;
+        width: 100px; */
         background: linear-gradient(to right bottom, #bdfbc2, #bdfbc2d0, #bdfbc2ae, #ecffec, #f3fff2);
         border-radius: 50%;
         position: relative;
@@ -1518,13 +1556,17 @@ h2{
     
     
     .bannerRight{
-        position: absolute;
-        left: -10%;
-        top: 55.5%;
         /* height: 20px; */
         /* width: 50vh; */
-        border-radius: 100%;
+        /* border-radius: 100%; */
         filter: drop-shadow(-3px -2px 3px grey);
+        margin-top: 60px;
+    }
+
+    .bannerRight img{
+        width: 85%;
+        height: auto;
+        border-radius: 50%;
     }
     
     .greeting{
@@ -1594,7 +1636,8 @@ h2{
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
-        padding: 40px;   
+        padding: 40px;
+        width: 100%;  
     }
     
     h2{
@@ -1609,13 +1652,18 @@ h2{
         border-left: 0px;
         box-shadow: 1px 9px 7px 0px rgba(0,0,0,0.3);
         transition: 0.4s;
-        margin-top: 20px;
+        margin-top: 20px;   
     }
+
     
     .skills-a span{
         height: 60px;
         width: 70px;
         background-color: #ff6527;
+    }
+
+    .skills-a ul{
+        width: 200px;
     }
     
     .rocket{
@@ -1643,7 +1691,7 @@ h2{
     .skills ul li{
         list-style-type: square;
         position: relative;
-        right: 0px;
+        right: 20px;
         line-height: 30px;
         color: #213555c8;
     }
@@ -1653,39 +1701,45 @@ h2{
     
     .banner2{
         display: flex;
-        flex-direction: column;
-        height: 650px;
-        width: 100%;
+        height: 430px;
+        width: 100vw;
         background: linear-gradient(to right bottom, #bafafa, #bbf5ff, #c2efff, #cce9ff, #d7e3ff, #d2e4ff, #cde5ff, #c8e6ff, #bbedfb, #b9f2ee, #c5f4dd, #dcf3cc);
         margin-top: 70px;
         box-shadow: 0px 3px 3px #c5f4dd,0px -2px 3px #c5f4dd;
+        /* margin: 20px; */
+        margin-top: 40px;
+        margin-right: 0;
     }
     
     .banner2-Image {
-        position: absolute;
-        right: 100px;
-        top: 100px;
         filter: drop-shadow(3px 3px 3px grey);
         z-index: 1;
         display: none;
     }
+
+    .banner2-Image img{
+        height: auto;
+        width: 100%;
+        /* margin-left: 30px; */
+        display: none;
+    }
     
     .banner-text{
-        position: relative;
-        top: 2rem;
-        left: 2px;
-        padding: 20px;
+        position: static;
+        padding: 5%;
     }
+
     .about{
         font-family: 'Roboto', sans-serif;
         color: #ff6527;
         text-transform: uppercase;
         letter-spacing: 2px;
+        font-size: 2vw;
     }
     
     .about2{
         font-family: 'Roboto', sans-serif;
-        font-size: 2rem;
+        font-size: 4vw;
         margin-top: 0;
         text-transform: uppercase;
         margin-bottom: 0;
@@ -1693,7 +1747,7 @@ h2{
     
     .about3{
         color: #213555ab;
-        font-size: 0.85rem;
+        font-size: 2vw;
     }
     
     .Contents{
@@ -1702,7 +1756,7 @@ h2{
         position: relative;
         /* right: 60px; */
         left: 0rem;
-        font-size: 0.75rem;
+        font-size: 2vw;
     }
     
     .Contents2{
@@ -1711,7 +1765,7 @@ h2{
         position: relative;
         left: -0.25rem;
         bottom: 20px;
-        font-size: 0.75rem;
+        font-size: 2vw;
         margin-top: 10px;
     }
     
@@ -1757,24 +1811,24 @@ h2{
     }
     
     .follow{
-        display: flex;
-        justify-content: center;
-        position: relative;
-        left:0px;
-        margin-top: 20px;
+        position: static;
+    }
+
+    .follow-text{
+        margin-left: 2vw;
+        font-size: 2.5vw;
     }
 
     .follow1{
-        display: inline-block;
+        /* display: inline-block; */
         height: 20px;
         width: 20px;
-        position: relative;
-        left: 80px;
+        /* position: relative; */
     }
     
     .facebook{
         background-color: #1877f2;
-        padding:10px 10px 10px 12px;
+        padding:12px 10px 10px 10px;
         border-radius: 50%;
         filter: drop-shadow(3px 2px 3px #1877f2);
     }
@@ -1807,28 +1861,33 @@ h2{
     }
     
     
-    .tooltips{
+     .tooltips{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    
+        margin: 0;
+     }
   
     .tooltips-line{
         display: flex;
         justify-content: space-around;
-        padding: 20px;
+        padding: 10px;
     }
 
     .progress-con{
         position: relative;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         margin-top: 30px;
+        margin-right: 50px;
+        
+    }
+
+    #progress-skills{
+        position: relative;
+        left: 5%;
     }
     
     .progress-con .progress{
@@ -1838,6 +1897,12 @@ h2{
         border-radius: 50%;
         background: #f3713e67 linear-gradient(to right,transparent 50%,var(--clr) 0);
         margin-top: 50px;
-    }  
+        left: 10px;
+        font-size: 2vw;
+    } 
+
+    .container-test{
+        height: fit-content;
+    }
 }
-/* if value is less than 50% */
+
