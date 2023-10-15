@@ -39,3 +39,36 @@ const navbarLinks = document.getElementsByClassName('nav-links')[0]
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
+
+
+var typed = new Typed(".auto-type",{
+  strings:["Programmer","Software Developer"],
+  typeSpeed :120,
+  backSpeed :120,
+  loop:true
+})
+
+var tl = gsap.timeline();
+
+tl.
+  from(".navigation",{
+    y:20,
+    opacity:0,
+    duration:1
+  })
+  .from(".banner",{
+    y:20,
+    opacity:0,
+  })
+  .from("#anime",{
+    x:60,
+    opacity:0,
+  })
+  .from(".serviceText",{
+    x:50,
+    opacity:0
+  })
+  .from(".service",{
+    x:-50,
+    opacity:0
+  })

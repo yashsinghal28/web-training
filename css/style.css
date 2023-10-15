@@ -224,6 +224,10 @@ a:after{
     
 }
 
+.auto-type{
+    color: #ff6527;
+}
+
 .bannerLeft{
     margin-top: 40px;
     margin-left: 40px;
